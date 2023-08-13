@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-header {
+    width: 100%;
+    height: 150px;
+    background-color: #333;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    position: relative;
+}
+
+.box-header h1 {
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.box-pic {
+    height: 125px;
+    width: 125px;
+    background-color: aliceblue;
+    position: absolute;
+    right: 25px;
+    bottom: -65px;
+    background-image: url(dp.jpg);
+    background-size: cover;
+    border: 10px solid rgb(237, 238, 238);
+    border-radius: 50%;
+}
+
+.box-body {
+    background-color: rgb(237, 238, 238);
+    width: 100%;
+    padding-left: 25px;
+}
+
+.info {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.info a {
+    color: black;
+    text-decoration: none;
+}
+.name {
+   font-weight: bold;
+   font-size: 1.1rem;
+}
+
+.qualification {
+    padding-bottom: 25px;
+}
+
+.experience {
+    padding-bottom: 25px;
+}
+
+.softwares {
+    padding-bottom: 50px;
+}
+.softwares li {
+    margin-left: 50px;    
+}
+
+.link {
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.link a:hover {
+    transition: .3s ease-in-out;
+    color: white;
+    background-color: #333;
+}
+
+.link {
+    padding-bottom: 50px;
+}
+
+@media (max-width:1000px) {
+    .container-box {
+        width: 100%;
+    }
+    .container {
+        padding:0;
+    }
+}
